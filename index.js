@@ -42,4 +42,4 @@ app.post('/', async (req, res) => {
       res.status(500).send("An error occurred");
     }
   });
-app.listen(3000);
+app.listen(3000)
