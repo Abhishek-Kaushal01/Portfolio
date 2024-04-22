@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Abhishek.</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="blogs" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <input type="checkbox" id="click">
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </label>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+                    </ul>
+                    
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abhishek</span><br> Web Designer</h1>
+                    <a href="#" class="button">Resume</a>
+                    <div class="social">
+                        <a href="https://in.linkedin.com/" style="--socialAni:1"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/_mr.kaushal_25/" style="--socialAni:2"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="" style="--socialAni:3"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" style="--socialAni:4"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+             
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Abhishek</h2>
+                        <p class="about__text">I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by Web development solutions</p>
+                        <a href="skills.html" class="button">About</a>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Node js</span>
+                            </div>
+                            <div class="skills__bar skills__node">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__java">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <section class="categories">
+                            <div class="container categories_container">
+                                <div class="categories_right">
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-html-logo-48 (1).png"></span>
+                                        <h5>HTML</h5>
+                                        <p> HTML is the standard markup language for creating Web pages ! </p>
+                                    </article>
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-css-logo-48.png"></span>
+                                        <h5>CSS</h5>
+                                        <p>CSS is unique in that it doesn't create any new elements, like HTML or JavaScript !</p>
+                                    </article>
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-javascript-48.png"></span>
+                                        <h5>JavaScript</h5>
+                                        <p>JavaScript is a scripting language used to create and control dynamic website content</p>
+                                    </article>
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-react-40.png"></span>
+                                        <h5>React</h5>
+                                        <p>React is a JavaScript-based UI development library</p>
+                                    </article>
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-node-js-48.png"></span>
+                                        <h5>Node js</h5>
+                                        <p>Node.js is an Open Source, cross-platform runtime environment for executing JavaScript code.
+                                        </p>
+                                    </article>
+                
+                                    <article class="category">
+                                        <span class="category_icon"><img src="/img/icons8-circled-n-50.png"></span>
+                                        <h5>Next Js</h5>
+                                        <p>Next.js is a React framework for building full-stack web applications !</p>
+                                    </article></section>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Project</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="/img/9.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="/" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" class="contact__input" name="name">
+                        <input type="mail" placeholder="Email" class="contact__input" name="email">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" name="mess"></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Available for freelance opportunties</p>
+            <p class = "footer__copy">Have an exciting project you need help with? </p> 
+            <p class = "footer__copy">Send me an email or contact me via instant message! </p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <p class="footer__copy"><i style="font-size:11px" class="fa">&#xf0e0;</i>  abhishekkaushal@gmail.com</p>
+                <p class="footer__copy"><i style="font-size:11px" class="fa">&#xf095;</i>   7379011709</p>
+            </div>
+           
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="/js/main.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f3fb" />
+    <title>Rakesh Chowdhury</title>
+    <meta
+      name="description"
+      content="A one-page personal about me website built using HTML, CSS, and JavaScript. It is a simple and clean design, with a focus on showcasing your existing social media following."
+    />
+    <meta
+      name="keywords"
+      content="Personal portfolio, Personal portfolio website, rakeshid03, Creative portfolio, Professional portfolio, Rakesh Chowdhury's Personal portfolio, Developer portfolio, Personal portfolio ui design, Personal portfolio source code, Personal portfolio using html, css, javascript, clean and simple personal portfolio"
+    />
+    <link rel="canonical" href="rakeshid03.github.io/about-me/" />
+    <meta name="author" content="Rakeshid03" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Unpkg for card scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f3fb;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: #343b45;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/***wrapper maintain page content width***/
+.wrapper {
+  padding: 1.5rem 0;
+  margin: auto;
+  width: 85%;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*****Picture and name*****/
+.picture {
+  height: 9rem;
+  width: 9rem;
+  background-color: #52c8ff;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.picture img {
+  height: 9rem;
+  width: 9rem;
+}
+.name {
+  padding: 1rem 0;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #00445a;
+}
+
+/*****Few personal details*****/
+.info-box {
+  width: 100%;
+  background-color: #f5f5fc;
+  border-radius: 0.5rem;
+  border: 2px solid #343b45;
+  padding: 1rem 0;
+  height: 3.45rem;
+  overflow: hidden;
+  position: relative;
+}
+/*if toggle btn click then add .active*/
+.info-box .toggle {
+  padding: 0.94rem;
+  width: 100%;
+  height: 3.36rem;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.3rem;
+  top: 0;
+  right: 0;
+}
+.info-box.active {
+  height: auto;
+  padding-bottom: 0;
+  overflow: visible;
+}
+/***toggle button rotate on click***/
+.info-box .toggle i {
+  float: right;
+  transition: 0.25s;
+}
+.info-box.active .toggle > i {
+  transition: 0.25s;
+  transform: rotate(-180deg);
+}
+
+/***details***/
+.details {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin: auto;
+}
+.details ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.details ul li {
+  color: #4b4c4f;
+  padding: 0.5rem;
+}
+.details b {
+  color: #00445a;
+  letter-spacing: 1.3px;
+}
+.details .about {
+  line-height: 1.5rem;
+}
+
+/***Project section***/
+.projects {
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #0000001a;
+  padding: 0;
+  text-decoration: none;
+}
+
+.project i {
+  font-size: 2rem;
+  color: #26caff;
+}
+
+.project ul {
+  overflow: hidden;
+  list-style-type: none;
+  line-height: 0.2rem;
+  margin-left: 0.8rem;
+}
+
+.project ul li {
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+
+.project ul small {
+  color: #909090;
+}
+
+/*****All social media btn*****/
+.social-media {
+  width: 100%;
+}
+
+.social-media div {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  border: 2px solid #343b45;
+  background-color: #f5f5fc;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.social-media div:hover {
+  color: #ffffff;
+  background-color: #343b45;
+}
+
+/***responsive for desktop***/
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 55%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!----Picture and name---->
+        <div class="picture">
+          <img
+            src="assets/profile-picture.webp"
+            alt="error"
+          />
+        </div>
+        <div class="name" translate="no">Abhishek Kaushal</div>
+
+        <!----Few personal detail---->
+        <!--more details button-->
+        <div class="info-box">
+          About me
+          <div class="toggle" onclick="vibrate()">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <!--details-->
+          <div>
+            <br />
+            <div class="details">
+              <ul>
+                <li class="about">
+                  Hello, I’m Abhishek Kaushal, but most people call me 'RC'. I
+                  am a web developer, multimedia editor, and meme star. I was
+                  born and raised in Uttar Pardesh, and am still living
+                  here. When I am not busy at work, you will find me making
+                  hilarious memes, clicking amazing photos, playing mobile
+                  games, drawing my imagination on paper and watching movies and
+                  series. I believe the best way to learn anything is to have
+                  fun, which is why I try to infuse humor into everything I do.
+                  Be it websites, videos, memes or life, you can always look
+                  forward to a good day when you are with me.
+                  <br /><br />
+                  Please don't hesitate to connect with me on every major social
+                  media platform with my email abhishekkaushal011@gmail.com.
+                </li>
+                <li>
+                  
+
+                    <a
+                      href="https://rakeshid03.github.io/Monsterio/"
+                      class="project"
+                    >
+                      <i class="fa-solid fa-file"></i>
+                      <ul>
+                        <li>Monsterio</li>
+                        <li><small>Created 14.09.2022</small></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!----All social media buttons---->
+        <div class="social-media">
+          <a href="mailto:abhishekkaushal011@gmail.com">
+            <div><i class="fa-solid fa-envelope"></i>Email</div>
+          </a>
+          <a href="https://www.facebook.com/rakeshid03"
+            ><div><i class="fa-brands fa-facebook-f"></i>Facebook</div>
+          </a>
+          <a href="https://instagram.com/Rakeshid03"
+            ><div><i class="fa-brands fa-instagram"></i>Instagram</div>
+          </a>
+          <a href="https://twitter.com/Rakeshid03"
+            ><div><i class="fa-brands fa-x-twitter"></i>Twitter</div>
+          </a>
+          <a href="https://github.com/rakeshid03">
+            <div><i class="fa-brands fa-github"></i>Github</div>
+          </a>
+          <a href="https://youtube.com/channel/UC9QQOQ4DGeSdLuKTZ1nXTAg"
+            ><div><i class="fa-brands fa-youtube"></i>YouTube</div>
+          </a>
+          <a href="https://www.linkedin.com/mwlite/in/rakeshid03"
+            ><div><i class="fa-brands fa-linkedin-in"></i>LinkedIn</div>
+          </a>
+          <a href="https://codepen.io/Rakeshid03"
+            ><div><i class="fa-brands fa-codepen"></i>Codepen</div>
+          </a>
+          <a href="https://www.deviantart.com/rakeshid03">
+            <div><i class="fa-brands fa-deviantart"></i>Deviantart</div>
+          </a>
+          <a href="https://in.pinterest.com/rakeshid03/">
+            <div><i class="fa-brands fa-pinterest"></i>Pinterest</div>
+          </a>
+          <a href="https://www.flickr.com/photos/196287688@N08/albums/">
+            <div><i class="fa-brands fa-flickr"></i>Flickr</div>
+          </a>
+          <a href="https://stackoverflow.com/users/17731482/rakeshid03">
+            <div><i class="fa-brands fa-stack-overflow"></i>Stackoverflow</div>
+          </a>
+          <a href="https://hashnode.com/@Rakeshid03">
+            <div><i class="fa-brands fa-hashnode"></i>Hashnode</div>
+          </a>
+          <a href="https://www.quora.com/profile/Rakeshid03">
+            <div><i class="fa-brands fa-quora"></i>Quora</div>
+          </a>
+          <a href="https://medium.com/@rakeshid03">
+            <div><i class="fa-brands fa-medium"></i>Medium</div>
+          </a>
+          <a href="https://dribbble.com/rakeshid03">
+            <div><i class="fa-brands fa-dribbble"></i>Dribbble</div>
+          </a>
+          
+          <a href="https://www.tumblr.com/rakeshid03/">
+            <div><i class="fa-brands fa-tumblr"></i>Tumblr</div>
+          </a>
+          <a href="https://www.goodreads.com/rakeshid3">
+            <div><i class="fa-brands fa-goodreads"></i>Goodreads</div>
+          </a>
+         
+        </div>
+      </div>
+    </div>
+    <script>
+        /*more details button*/
+const container = document.querySelector(".info-box");
+const toggle = document.querySelector(".toggle");
+toggle.addEventListener("click", () => {
+  container.classList.toggle("active");
+});
+
+/*vibration*/
+function vibrate() {
+  navigator.vibrate(6);
+}
+
+// Zoom in up effect add in every social media button one by one
+const socialMediaLinks = document.querySelectorAll(".social-media div");
+
+// ON SCROLL REVEAL SMALL CARDS
+ScrollReveal().reveal(socialMediaLinks, {
+  duration: 1000,
+  opacity: 0,
+  distance: "30%",
+  origin: "bottom",
+  scale: 0.9,
+});
+
+    </script>
+  </body>
+</html>
